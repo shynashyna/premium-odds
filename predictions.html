@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions - Football Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Football Predictions</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Predictions</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="filter">
+        <h3>Filter Predictions</h3>
+        <form id="filter-form">
+            <label for="date-filter">Date:</label>
+            <input type="date" id="date-filter" name="date" />
+    
+            <label for="league-filter">League:</label>
+            <select id="league-filter" name="league">
+                <option value="all">All</option>
+                <option value="Premier League">Premier League</option>
+                <option value="La Liga">La Liga</option>
+                <option value="Serie A">Serie A</option>
+            </select>
+    
+            <label for="team-filter">Team:</label>
+            <input type="text" id="team-filter" name="team" placeholder="Enter team name" />
+    
+            <button type="button" id="filter-button">Apply Filters</button>
+        </form>
+    </section>
+    
+    <section class="predictions">
+        <div class="prediction-item" data-date="2024-10-22" data-league="Premier League" data-team="Manchester United">
+            <p><strong>Manchester United</strong> vs <strong>Arsenal</strong> - 22nd October 2024</p>
+            <p>Prediction: Manchester United to win either half</p>
+        </div>
+        <div class="prediction-item" data-date="2024-10-23" data-league="La Liga" data-team="Barcelona">
+            <p><strong>Barcelona</strong> vs <strong>Real Madrid</strong> - 23rd October 2024</p>
+            <p>Prediction: Both teams to score</p>
+        </div>
+        <div class="prediction-item" data-date="2024-10-24" data-league="Serie A" data-team="Juventus">
+            <p><strong>Juventus</strong> vs <strong>Napoli</strong> - 24th October 2024</p>
+            <p>Prediction: Over 2.5 goals</p>
+        </div>
+    </section>
+    
+    <section class="predictions">
+        <div class="container">
+            <h2>Upcoming Match Predictions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Match</th>
+                        <th>Prediction</th>
+                        <th>Countdown</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr>
+                        <td>22 Oct 2024</td>
+                        <td>Team A vs Team B</td>
+                        <td>Team A to Win</td>
+                    </tr>
+                    <tr>
+                        <td>23 Oct 2024</td>
+                        <td>Team C vs Team D</td>
+                        <td>Draw</td>
+                    </tr>
+                    <tr>
+                        <td>24 Oct 2024</td>
+                        <td>Team E vs Team F</td>
+                        <td>Over 2.5 Goals</td>
+                    </tr>
+                </tbody> -->
+
+                <tbody>
+                    <tr data-timer="2024-10-23T18:30:00">
+                        <td>23 Oct 2024</td>
+                        <td>Team A vs Team B</td>
+                        <td>Team A to Win</td>
+                        <td class="countdown">Loading...</td>
+                    </tr>
+                    <tr data-timer="2024-10-24T20:00:00">
+                        <td>24 Oct 2024</td>
+                        <td>Team C vs Team D</td>
+                        <td>Draw</td>
+                        <td class="countdown">Loading...</td>
+                    </tr>
+                    <tr data-timer="2024-10-25T22:15:00">
+                        <td>25 Oct 2024</td>
+                        <td>Team E vs Team F</td>
+                        <td>Over 2.5 Goals</td>
+                        <td class="countdown">Loading...</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Football Predictions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
