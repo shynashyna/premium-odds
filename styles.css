@@ -230,6 +230,12 @@ table tbody tr:hover {
     background: #d13600;
 } */
 
+a {
+    text-decoration: none;
+}
+
+
+
 
 /* About Section */
 .about {
@@ -468,6 +474,7 @@ td.countdown {
     background: #f9f9f9;
     padding: 40px 20px;
     text-align: center;
+    
 }
 
 .membership h2 {
