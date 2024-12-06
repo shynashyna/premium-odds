@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             durationLabel.textContent = "years";
         }
 
-        totalPrice.textContent = `R${price}`;
+        totalPrice.textContent = `K${price}`;
     }
 
     planType.addEventListener("change", updatePrice);
