@@ -99,10 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let price = 0;
 
         if (plan === "monthly") {
-            price = 100,000 * durationValue;
+            price = 100000 * durationValue;
             durationLabel.textContent = "months";
         } else if (plan === "yearly") {
-            price = 1,000,0000 * durationValue;
+            price = 10000000 * durationValue;
             durationLabel.textContent = "years";
         }
 
